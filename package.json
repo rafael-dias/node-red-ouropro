@@ -2,7 +2,11 @@
     "name": "Node-Red-OuroPro",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-opcua": "0.2.332",
+        "node-red-node-mysql": "2.0.0",
+        "node-red-node-sqlite": "1.1.0"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows-ouropro.json",
