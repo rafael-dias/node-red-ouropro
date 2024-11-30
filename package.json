@@ -5,7 +5,8 @@
     "dependencies": {
         "node-red-contrib-opcua": "0.2.332",
         "node-red-node-mysql": "2.0.0",
-        "node-red-node-sqlite": "1.1.0"
+        "node-red-node-sqlite": "1.1.0",
+        "csv-writer": "^1.6.0",
     },
     "node-red": {
         "settings": {
