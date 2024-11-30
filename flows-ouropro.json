@@ -86,7 +86,7 @@
         "type": "function",
         "z": "423df26a24319b49",
         "name": "function 26",
-        "func": "var cliente = \"teste server.ouropro\"\nvar nome_transportador = \"nome_transportador\"\nvar cnpj = \"cnpj\"\nvar placa = \"placa\"\nvar telefone = \"telefone\"\nvar doc_carga = \"doc_carga\"\nvar volume_recebido = 10000\nvar volume_venda = 22222\nvar volume_carregado = 33333\nvar volume_tanque = 44444\nvar estacao = 10\nvar controle_node_red = 1\nvar evento = 0\n\nconst data = new Date();\nconst dia = String(data.getDate()).padStart(2, '0');\nconst mes = String(data.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!\nconst ano = data.getFullYear();\nconst horas = String(data.getHours()).padStart(2, '0');\nconst minutos = String(data.getMinutes()).padStart(2, '0');\nconst segundos = String(data.getSeconds()).padStart(2, '0');\n\nvar dataF = `${ano}-${mes}-${dia} ${horas}:${minutos}:${segundos}`;\n\nmsg.payload = {\ncliente,\nnome_transportador,\ncnpj,\nplaca,\ntelefone,\ndoc_carga,\nvolume_recebido,\nvolume_venda,\nvolume_carregado,\nvolume_tanque,\nestacao,\ndata,\nevento\n}\n\n\n\n\nreturn msg;\n\n\n\n",
+        "func": "var cliente = \"teste server.ouropro\"\nvar nome_transportador = \"nome_transportador\"\nvar cnpj = \"cnpj\"\nvar placa = \"placa\"\nvar telefone = \"telefone\"\nvar doc_carga = \"doc_carga\"\nvar cultura = \"Alfafa\"\nvar volume_recebido = 10000\nvar volume_venda = 22222\nvar volume_carregado = 33333\nvar volume_tanque = 44444\nvar estacao = 10\nvar controle_node_red = 1\nvar evento = 0\n\nconst data = new Date();\nconst dia = String(data.getDate()).padStart(2, '0');\nconst mes = String(data.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!\nconst ano = data.getFullYear();\nconst horas = String(data.getHours()).padStart(2, '0');\nconst minutos = String(data.getMinutes()).padStart(2, '0');\nconst segundos = String(data.getSeconds()).padStart(2, '0');\n\nvar dataF = `${ano}-${mes}-${dia} ${horas}:${minutos}:${segundos}`;\n\nmsg.payload = {\ncliente,\nnome_transportador,\ncnpj,\nplaca,\ntelefone,\ndoc_carga,\nvolume_recebido,\nvolume_venda,\nvolume_carregado,\nvolume_tanque,\nestacao,\ncultura,\ndata,\nevento\n}\n\n\n\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -175,7 +175,7 @@
         "type": "function",
         "z": "423df26a24319b49",
         "name": "function 27",
-        "func": "var cliente = \"Fazenda Feliz\"\nvar nome_transportador = \"Transportador Feliz\"\nvar cnpj = \"9999999999\"\nvar placa = \"abc-9999\"\nvar telefone = \"99 99999999\"\nvar doc_carga = \"doc02154545\"\nvar volume_recebido = 10000\nvar volume_venda = 22222\nvar volume_carregado = 33333\nvar volume_tanque = 44444\nvar estacao = 10\nvar controle_node_red = 1\nvar evento = 0\n\nconst data = new Date();\nconst dia = String(data.getDate()).padStart(2, '0');\nconst mes = String(data.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!\nconst ano = data.getFullYear();\nconst horas = String(data.getHours()).padStart(2, '0');\nconst minutos = String(data.getMinutes()).padStart(2, '0');\nconst segundos = String(data.getSeconds()).padStart(2, '0');\n\nvar dataF = `${ano}-${mes}-${dia} ${horas}:${minutos}:${segundos}`;\n\nmsg.payload = {\ncliente,\nnome_transportador,\ncnpj,\nplaca,\ntelefone,\ndoc_carga,\nvolume_recebido,\nvolume_venda,\nvolume_carregado,\nvolume_tanque,\nestacao,\ndata,\nevento\n}\n\n\n\n\nreturn msg;\n\n\n\n",
+        "func": "var cliente = \"Fazenda Feliz\"\nvar nome_transportador = \"Transportador Feliz\"\nvar cnpj = \"9999999999\"\nvar placa = \"abc-9999\"\nvar telefone = \"99 99999999\"\nvar doc_carga = \"doc02154545\"\nvar cultura = \"Trigo\"\nvar volume_recebido = 10000\nvar volume_venda = 22222\nvar volume_carregado = 33333\nvar volume_tanque = 44444\nvar estacao = 10\nvar controle_node_red = 1\nvar evento = 0\n\nconst data = new Date();\nconst dia = String(data.getDate()).padStart(2, '0');\nconst mes = String(data.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!\nconst ano = data.getFullYear();\nconst horas = String(data.getHours()).padStart(2, '0');\nconst minutos = String(data.getMinutes()).padStart(2, '0');\nconst segundos = String(data.getSeconds()).padStart(2, '0');\n\nvar dataF = `${ano}-${mes}-${dia} ${horas}:${minutos}:${segundos}`;\n\nmsg.payload = {\ncliente,\nnome_transportador,\ncnpj,\nplaca,\ntelefone,\ndoc_carga,\nvolume_recebido,\nvolume_venda,\nvolume_carregado,\nvolume_tanque,\nestacao,\ncultura,\ndata,\nevento\n}\n\n\n\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -202,8 +202,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 560,
+        "x": 980,
+        "y": 600,
         "wires": []
     },
     {
